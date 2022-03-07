@@ -37,7 +37,7 @@ Page({
     })
   },
 
-  bindRoomChange: function(e){
+  bindContentChange: function(e){
     this.setData({
       workContentIndex: e.detail.value
     })

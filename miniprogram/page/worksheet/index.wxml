@@ -35,7 +35,7 @@
           <view class="weui-label">当前选择</view>
         </view>
         <view class="weui-cell__bd">
-          <picker mode="selector" range="{{ workContentList }}" value="{{ workContentIndex }}" bindchange="bindLocationChange">
+          <picker mode="selector" range="{{ workContentList }}" value="{{ workContentIndex }}" bindchange="bindContentChange">
             <view class="weui-input">{{ workContentList[workContentIndex] }}</view>
           </picker>
         </view>
