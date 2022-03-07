@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/worksheet/index",
     "page/component/index",
     "page/API/index",
     "page/cloud/index",
@@ -208,6 +209,12 @@
       "packages": [
         "packageExtend"
       ]
+    },
+    "page/worksheet/index": {
+      "network": "all",
+      "packages": [
+        "packageExtend"
+      ]
     }
   },
   "window": {
@@ -222,6 +229,12 @@
     "borderStyle": "@tabBarBorderStyle",
     "backgroundColor": "@tabBarBackgroundColor",
     "list": [
+      {
+        "pagePath": "page/worksheet/index",
+        "iconPath": "@iconPathComponent",
+        "selectedIconPath": "@selectedIconPathComponent",
+        "text": "工作票"
+      },
       {
         "pagePath": "page/component/index",
         "iconPath": "@iconPathComponent",
@@ -271,7 +284,12 @@
     "weui": true
   },
   "frameset": true,
-  "requiredBackgroundModes": ["audio", "location"],
-  "embeddedAppIdList": ["wxfdcee92a299bcaf1"],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "embeddedAppIdList": [
+    "wxfdcee92a299bcaf1"
+  ],
   "lazyCodeLoading": "requiredComponents"
 }
