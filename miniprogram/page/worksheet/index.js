@@ -5,9 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    workLocationIndex: 0,
+    workLocationList: [
+      "10kV",
+      "20kV",
+      "40kV",
+    ],
+    switchControlRoomIndex: 0,
+    switchControlRoomList: [
+      "新河111开关", 
+      "新河232开关",
+      "新河123开关"
+    ],
+    workContentIndex: 0,
+    workContentList: [
+      "111开关例行实验",
+      "141开关例行实验",
+      "1671开关例行实验",
+    ],
+  },
+  
+  bindLocationChange: function(e){
+    this.setData({
+      workLocationIndex: e.detail.value
+    })
   },
 
+  bindRoomChange: function(e){
+    this.setData({
+      switchControlRoomIndex: e.detail.value
+    })
+  },
+
+  bindRoomChange: function(e){
+    this.setData({
+      workContentIndex: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

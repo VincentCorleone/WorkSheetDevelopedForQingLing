@@ -1,2 +1,49 @@
 <!--page/worksheet/index.wxml-->
-<text>page/worksheet/index.wxml</text>
+<view class="page-section">
+    <view class="weui-cells__title">工作地点</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">当前选择</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="selector" range="{{ workLocationList }}" value="{{ workLocationIndex }}" bindchange="bindLocationChange">
+            <view class="weui-input">{{ workLocationList[workLocationIndex] }}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">开关室</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">当前选择</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="selector" range="{{ switchControlRoomList }}" value="{{ switchControlRoomIndex }}" bindchange="bindRoomChange">
+            <view class="weui-input">{{ switchControlRoomList[switchControlRoomIndex] }}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">工作内容</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">当前选择</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="selector" range="{{ workContentList }}" value="{{ workContentIndex }}" bindchange="bindLocationChange">
+            <view class="weui-input">{{ workContentList[workContentIndex] }}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view style="display: flex; flex-direction: row;">
+      <button type="primary">查看</button>
+      <button type="warn">修改</button>
+    </view>
+
+  </view>
